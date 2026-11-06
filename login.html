@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones - GARNET Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cbtis-left-panel {
+            position: relative;
+            background: linear-gradient(rgba(42, 8, 12, 0.85), rgba(18, 3, 5, 0.9)), url('img/ft.jpg') no-repeat center center !important;
+            background-size: cover !important;
+            color: white;
+        }
+        /* Ajuste estético para que los nuevos campos se vean ordenados y elegantes */
+        .cbtis-input-group {
+            margin-bottom: 12px;
+        }
+        .cbtis-input-group input, .cbtis-input-group select {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="cbtis-login-body">
+
+    <div class="cbtis-login-container">
+
+        <!-- LADO IZQUIERDO: Panel con tu imagen y concepto -->
+        <div class="cbtis-left-panel">
+            <div class="cbtis-left-content">
+                <div class="cbtis-illustration-box">
+                    <div class="cbtis-badge-icon">🍷✨</div>
+                    <h2>GARNET RESERVACIONES</h2>
+                </div>
+                <div class="cbtis-notices-box" style="background: rgba(42, 8, 12, 0.6); border: 1px solid rgba(255, 255, 255, 0.15);">
+                    <h3>Experiencia Culinaria</h3>
+                    <p>Complete sus datos para asegurar su mesa. Disfrute de nuestra alta cocina internacional y mixología de autor.</p>
+                </div>
+            </div>
+            <div class="cbtis-left-footer">
+                GARNET Restaurant & Co. &copy; 2026<br>
+                <span>Aviso de privacidad | Términos y condiciones</span>
+            </div>
+        </div>
+
+        <!-- LADO DERECHO: Formulario Completo de Reserva -->
+        <div class="cbtis-right-panel">
+            <div class="cbtis-login-wrapper">
+                
+                <div class="login-back-container">
+                    <a href="index.html" class="cbtis-back-link">← Regresar al inicio</a>
+                </div>
+
+                <div class="cbtis-logo-header">
+                    <div class="login-logo-emoji">🍽️</div>
+                    <h1>GARNET <strong>RESTAURANT</strong></h1>
+                </div>
+
+                <form id="form-login">
+                    
+                    <div class="cbtis-input-group">
+                        <label for="nombre">Nombre del Comensal</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Keyla Gómez" required>
+                    </div>
+
+                    <div class="cbtis-input-group">
+                        <label for="telefono">Teléfono de Contacto</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="777 123 4567" required>
+                    </div>
+
+                    <div class="cbtis-input-group">
+                        <label for="fecha">Fecha de la Reserva</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <div class="cbtis-input-group">
+                        <label for="personas">Número de Personas</label>
+                        <select id="personas" name="personas" required>
+                            <option value="">Seleccione los comensales</option>
+                            <option value="1">1 Persona (Individual)</option>
+                            <option value="2">2 Personas (Mesa Pareja)</option>
+                            <option value="4">4 Personas (Mesa Familiar)</option>
+                            <option value="6">6+ Personas (Grupo / VIP)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="cbtis-btn-ingresar" style="background-color: #5c0017; margin-top: 10px;">CONFIRMAR RESERVACIÓN</button>
+                </form>
+
+                <div class="cbtis-login-help" style="margin-top: 15px;">
+                    <a href="#">¿Dudas con su mesa?</a> | <a href="#">Modificar reserva</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT DIRECTO PARA LA ALERTA DE RESERVA -->
+    <script>
+        document.getElementById("form-login").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita que recargue la página
+            
+            const nombre = document.getElementById("nombre").value;
+            const fecha = document.getElementById("fecha").value;
+            const personas = document.getElementById("personas").value;
+
+            alert(`¡Reserva confirmada con éxito!\n\nComensal: ${nombre}\nFecha: ${fecha}\nPersonas: ${personas}\n\n¡Te esperamos en GARNET! 🍷`);
+        });
+    </script>
+</body>
+</html>

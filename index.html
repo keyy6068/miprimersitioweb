@@ -1,0 +1,402 @@
+<!--
+  ======================================================================
+  INSTITUCIÓN: CBTis 166 Pablo Torres Burgos
+  ----------------------------------------------------------------------
+  * Estudiante: Flores Acosta Keyla Esther
+  * Grupo: 3B PRO VESP  
+  * Actividad: Portal Restaurante (Con barra superior, collage y formulario)
+  ====================================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garnet Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <header class="navbar" id="inicio">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="javascript:window.scrollTo({top: 0, behavior: 'smooth'});">
+                    <img src="img/LO.JPG" alt="GARNET" class="brand-logo-img">
+                </a>
+            </div>
+
+            <nav class="nav-links">
+                <span class="contact-item">📞 734 000 0000</span>
+                <span class="nav-diamond">◆</span>
+                <a href="javascript:window.scrollTo({top: 0, behavior: 'smooth'});">Inicio</a>
+                <span class="nav-diamond">◆</span>
+                <a href="#menu">Menú</a>
+                <span class="nav-diamond">◆</span>
+                <a href="login.html" class="btn-nav-login">RESERVA YA!!</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE DOS COLUMNAS CON COLLAGE DE IMÁGENES -->
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-text-side">
+                <h1>30 Años Junto A Ti</h1>
+                <div class="elegant-divider-end">
+                    <span class="divider-line"></span>
+                    <span class="divider-icon">꧂</span>
+                </div>
+                <h2>Sabores Únicos E Inigualables</h2>
+                <i>"Un homenaje a la alta cocina y a la hospitalidad impecable. Nos dedicamos a transformar el acto de comer en una experiencia artística memorable, cuidando cada detalle desde la rigurosa selección de nuestros ingredientes hasta el maridaje perfecto en tu copa. En un ambiente sofisticado, íntimo y acogedor, nuestro propósito es ofrecerte un refugio gastronómico donde el tiempo se detiene y cada bocado se convierte en una celebración. Sea una ocasión especial o un encuentro de negocios, estás en el lugar correcto."</i>
+                
+                <div class="hero-cta-box">
+                    <a href="login.html" class="btn-orange">Reserva Una Mesa</a>
+                    <div class="hero-benefits">
+                        <span>✓ Ingredientes 100% frescos</span>
+                        <span>✓ Estacionamiento privado sin costo</span>
+                        <span>✓ Chef internacional en cocina</span>
+                        <span>✓ Áreas VIP y terraza privada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-side">
+                <div class="image-collage">
+                    
+                    <div class="collage-main collage-carousel-box">
+                        <div class="main-carousel" id="carousel-principal">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurante Interior" class="carousel-img active">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Platillo Gourmet 1" class="carousel-img">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Platillo Gourmet 2" class="carousel-img">
+                        </div>
+                    </div>
+
+                    <div class="collage-sub">
+                        <img src="https://i.pinimg.com/736x/d2/1c/15/d21c154d5ffbc4cdb4819b0dbc8f7902.jpg" alt="Platillo">
+                        <div class="map-box">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6677943567!2d-99.16869!3d19.42702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzM3LjMiTiA5OcKwMTAnMDcuMyJX!5e0!3m2!1ses!2smx!4v1600000000000!5m2!1ses!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE MENÚ -->
+    <section id="menu" class="careers-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>MENÚ</h2>
+                <p>Observa Nuestros Mejores Platillos</p>
+            </div>
+
+            <div class="careers-grid">
+                
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="img/comida.mp4" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+                    </div>
+                    <div class="career-content">
+                        <h3>Comida</h3>
+                        <p>Disfruta de nuestros platillos fuertes preparados con ingredientes frescos y técnicas de alta cocina internacional.</p>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <img src="img/b1.jpeg" alt="Bebidas & Coctelería" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="career-content">
+                        <h3>Bebidas &amp; Coctelería</h3>
+                        <p>Coctelería de autor, mixología exclusiva y bebidas refrescantes para acompañar cada uno de tus momentos.</p>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="img/postre.mp4" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+                    </div>
+                    <div class="career-content">
+                        <h3>Postres</h3>
+                        <p>El toque dulce de la casa, repostería fina y creaciones artesanales diseñadas para consentir tu paladar.</p>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <iframe src="https://www.youtube.com/embed/lIyXy6uwCVg?autoplay=0&mute=1&controls=1&enablejsapi=1&origin=http://localhost" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%; height:100%; border:none;"></iframe>
+                    </div>
+                    <div class="career-content">
+                        <h3>Experiencia Garnet</h3>
+                        <p>Conoce más sobre nuestro concepto, la preparación de nuestros platillos y el ambiente exclusivo que tenemos para ti.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CHEFS -->
+    <section class="teachers-section">
+        <div class="teachers-container">
+            
+            <div class="teachers-header">
+                <div>
+                    <span class="teachers-tag">¿QUIÉNES MANDAN EN LA COCINA?</span>
+                    <h2>Nuestros Chefs</h2>
+                    <p>Nuestro equipo de chefs y especialistas lideran cada área de la alta cocina. Utiliza los botones para recorrer a los integrantes de nuestra brigada culinaria:</p>
+                </div>
+                <div class="teachers-nav-buttons">
+                    <button id="btn-prev" class="nav-btn">‹</button>
+                    <button id="btn-next" class="nav-btn">›</button>
+                </div>
+            </div>
+
+            <div class="teachers-grid" id="teachers-track">
+                
+                <div class="teacher-card">
+                    <div class="mini-carrusel-container" id="mini-carousel-1">
+                        <img src="img/chef1.png" alt="Chef Principal" class="mini-slide active">
+                        <img src="img/chef2.png" alt="Platillo Chef" class="mini-slide">
+                        <img src="img/chef3.png" alt="Cocina Chef" class="mini-slide">
+                        
+                        <button class="mini-btn mini-prev" onclick="cambiarMiniSlide(1, -1)">‹</button>
+                        <button class="mini-btn mini-next" onclick="cambiarMiniSlide(1, 1)">›</button>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Chef Gaona</h3>
+                        <p><strong>Chef Ejecutivo / Jefe de Cocina.</strong> Líder en alta gastronomía internacional.</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <div class="mini-carrusel-container" id="mini-carousel-2">
+                        <img src="img/p.jpg" alt="Chef Mauricio" class="mini-slide active">
+                        <img src="img/p2.jpg" alt="Platillo Chef Mauricio 2" class="mini-slide">
+                        <img src="img/p3.jpg" alt="Cocina Chef Mauricio 3" class="mini-slide">
+                        
+                        <div class="mini-dots">
+                            <button class="dot-btn active" onclick="irASlide(2, 0)">1</button>
+                            <button class="dot-btn" onclick="irASlide(2, 1)">2</button>
+                            <button class="dot-btn" onclick="irASlide(2, 2)">3</button>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Chef Mauricio</h3>
+                        <p><strong>Chef de Partie / Co-Director Culinario.</strong> Maestro experto en alta repostería.</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://institutomexicanodegastronomia.com.mx/storage/2025/12/donde-puede-trabajar-un-chef.webp" alt="Profesor">
+                    <div class="teacher-info">
+                        <h3>Chef Sonia Brito</h3>
+                        <p>Chef de Cocina Molecular & Texturas (Especialista en vanguardia gastronómica, esferificaciones, espumas y ciencia aplicada a la cocina).</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://pbs.twimg.com/profile_images/1804620401743638528/vX_9PeTk_400x400.jpg" alt="Profesor">
+                    <div class="teacher-info">
+                        <h3>Chef Rodrigo Mendoza</h3>
+                        <p>Chef de Mixología & Coctelería de Autor (Especialista en técnicas avanzadas de barismo, destilados artesanales y maridaje líquido).</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://definicion.de/wp-content/uploads/2011/04/chef-1.jpg" alt="Profesora">
+                    <div class="teacher-info">
+                        <h3>Chef Mateo Santillán</h3>
+                        <p>Chef Saucier / Experto en Salsas y Cocina Caliente (Especializado en fondos, reducciones y cocciones de carnes).</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://img.magnific.com/foto-gratis/chef-cocinando-cocina-mientras-lleva-ropa-profesional_23-2151208266.jpg?semt=ais_hybrid&w=740&q=80" alt="Profesor">
+                    <div class="teacher-info">
+                        <h3>Chef Alejandro Vega</h3>
+                        <p>Chef Pâtissier / Especialista en Chocolatería y Técnicas de Vanguardia (Innovación en texturas y postres al plato).</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://static.independentespanol.com/2024/05/27/16/newFile-2.jpg?width=1200&height=1200&fit=crop" alt="Profesora">
+                    <div class="teacher-info">
+                        <h3>Chef Damián Cruz</h3>
+                        <p>Sous Chef / Especialista en Parrilla y Humo (Coordinación del equipo y experto en técnicas de brasa y asados).</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://images.stockcake.com/public/d/6/1/d61990b6-07d6-4d02-b3d1-cefc295db452_large/chef-presents-dish-stockcake.jpg" alt="Profesor">
+                    <div class="teacher-info">
+                        <h3>Chef Renata Valdés</h3>
+                        <p>Chef Sommelier / Experta en Maridaje y Vinos (Encargada de la selección de vinos, coctelería de autor y la armonía entre bebidas y platillos).</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE ATENCIÓN Y CONSULTAS DIRECTAS -->
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-text-side">
+                <span class="hero-tag">🍷 ATENCIÓN AL COMENSAL</span>
+                <h1 class="hero-title-custom">¿Tiene alguna duda o solicitud especial?</h1>
+                <p class="hero-desc-custom">
+                    En GARNET nos aseguramos de que cada detalle sea perfecto. Déjanos tus datos y nos pondremos en contacto contigo a la brevedad.
+                </p>
+                
+                <div class="hero-subtitle-custom">
+                    Servicios personalizados:
+                </div>
+                <div class="hero-benefits hero-benefits-column">
+                    <span>✓ Coordinación de eventos privados y banquetes</span>
+                    <span>✓ Menús personalizados para alergias o restricciones</span>
+                    <span>✓ Selección de etiquetas exclusivas de nuestra cava</span>
+                    <span>✓ Preguntas sobre ubicación, estacionamiento y dress code</span>
+                </div>
+            </div>
+
+            <div class="hero-form-side">
+                <div class="cbtis-hero-form-card">
+                    
+                    <h3 class="form-card-title">
+                        Contacto Rápido
+                    </h3>
+
+                    <form id="form-hero-informes" action="#" method="POST">
+                        
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="text" id="info_nombre" name="nombre" required placeholder="Nombre completo" class="form-control-input">
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="email" id="info_email" name="email" required placeholder="Correo electrónico" class="form-control-input">
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="tel" id="info_telefono" name="telefono" required placeholder="Teléfono o WhatsApp" class="form-control-input">
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <select id="info_asunto" name="asunto" required class="form-control-select">
+                                <option value="">Motivo de consulta</option>
+                                <option value="evento">Evento Privado / Banquete</option>
+                                <option value="menu">Dudas sobre el Menú</option>
+                                <option value="otro">Otra consulta</option>
+                            </select>
+                        </div>
+
+                        <div class="cbtis-input-group form-group-margin">
+                            <textarea id="info_comentarios" name="comentarios" rows="3" placeholder="¿En qué podemos ayudarte?" class="form-control-textarea"></textarea>
+                        </div>
+
+                        <div class="cbtis-input-group form-group-checkbox">
+                            <input type="checkbox" id="info_terminos" name="terminos" required class="form-checkbox-input">
+                            <label for="info_terminos" class="form-checkbox-label">
+                                Acepto el aviso de privacidad de GARNET.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="cbtis-btn-ingresar form-submit-btn" style="background-color: #5c0017; border: none; color: white;">
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE RESEÑAS Y MULTIMEDIA -->
+    <section class="convenios-section">
+        <div class="convenios-container">
+            
+            <div class="section-header">
+                <span class="teachers-tag convenience-tag-custom">¿QUÉ DICEN LOS EXPERTOS DE GARNET?</span>
+                <h2>Reseñas y Reconocimientos</h2>
+                <p>La crítica gastronómica y nuestros comensales más exigentes avalan la excelencia de nuestra brigada culinaria.</p>
+            </div>
+
+            <div class="marquee-wrapper">
+                <div class="marquee-track marquee-track-top">
+                    <div class="convenio-card">⭐ Guía Michelin: "Una experiencia sensorial inigualable"</div>
+                    <div class="convenio-card">🍷 Sommelier Mag: "La mejor selección de maridaje de la ciudad"</div>
+                    <div class="convenio-card">⭐⭐⭐ 5/5 Stars: "Servicio impecable y técnica de vanguardia"</div>
+                    <div class="convenio-card">🍽️ Gourmet Journal: "Postres que son verdaderas obras de arte"</div>
+                    <div class="convenio-card">✨ Crítica Gastronómica: "Texturas inolvidables en cada platillo"</div>
+                    <div class="convenio-card">⭐ Guía Michelin: "Una experiencia sensorial inigualable"</div>
+                    <div class="convenio-card">🍷 Sommelier Mag: "La mejor selección de maridaje de la ciudad"</div>
+                    <div class="convenio-card">⭐⭐⭐ 5/5 Stars: "Servicio impecable y técnica de vanguardia"</div>
+                    <div class="convenio-card">🍽️ Gourmet Journal: "Postres que son verdaderas obras de arte"</div>
+                    <div class="convenio-card">✨ Crítica Gastronómica: "Texturas inolvidables en cada platillo"</div>
+                </div>
+            </div>
+
+            <div class="marquee-wrapper marquee-wrapper-spacing">
+                <div class="marquee-track marquee-track-bottom">
+                    <div class="convenio-card">🥇 Premio Excelencia Culinaria 2026</div>
+                    <div class="convenio-card">🍸 Mixology Review: "Coctelería de autor innovadora y elegante"</div>
+                    <div class="convenio-card">🔥 Bistro Magazine: "La mejor propuesta gastronómica del año"</div>
+                    <div class="convenio-card">⭐ Recomendación Michelin: "Ambiente único y sazón sublime"</div>
+                    <div class="convenio-card">💬 Comensal Frecuente: "Simplemente la mejor cena de mi vida"</div>
+                    <div class="convenio-card">🥇 Premio Excelencia Culinaria 2026</div>
+                    <div class="convenio-card">🍸 Mixology Review: "Coctelería de autor innovadora y elegante"</div>
+                    <div class="convenio-card">🔥 Bistro Magazine: "La mejor propuesta gastronómica del año"</div>
+                    <div class="convenio-card">⭐ Recomendación Michelin: "Ambiente único y sazón sublime"</div>
+                    <div class="convenio-card">💬 Comensal Frecuente: "Simplemente la mejor cena de mi vida"</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="multimedia-row">
+            <div class="multimedia-item">
+                <h3>♬.*･.Escucha nuestro ambiente culinario:♬.*･.</h3>
+                <audio controls>
+                    <source src="img/m.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+            </div>
+
+            <div class="multimedia-item spotify-box">
+                <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/episode/3Fu9CZBG8eTuHjBD5LioC3?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="multimedia-item">
+                <a href="https://guide.michelin.com/en" target="_blank" rel="noopener" class="external-link">
+                    <h3>Echa Un Vistazo(☆ω<)</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Garnet Restaurant &copy; 2026</p>
+                <p class="footer-author">Desarrollado por: Keyla Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vinculación del script externo -->
+    <script src="script.js"></script>
+</body>
+</html>
